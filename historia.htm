@@ -1,5 +1,91 @@
 <html>
 <head>
+
+  /* ===== MENU MOVIL ===== */
+
+.mobile-nav{
+  display:none;
+  background:#669966;
+  padding:10px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.hamburger{
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+}
+
+.mobile-menu{
+  display:none;
+  flex-direction:column;
+}
+
+.mobile-menu a{
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  border-top:1px solid rgba(255,255,255,0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media screen and (max-width: 768px){
+<script>
+
+function toggleMenu() {
+
+var menu = document.getElementById("mobileMenu");
+
+if(menu.style.display === "flex"){
+menu.style.display = "none";
+}else{
+menu.style.display = "flex";
+}
+
+}
+
+</script>
+  body{
+    background-size:cover;
+  }
+<div class="mobile-nav">
+
+<div class="hamburger" onclick="toggleMenu()">
+‚ò∞ Men√∫
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.htm">Inicio</a>
+<a href="fotos.html">Fotos</a>
+<a href="modelos.htm">Modelos</a>
+<a href="tecnica.html">T√©cnica</a>
+<a href="links.html">Links</a>
+<a href="diagramas.htm">Diagramas</a>
+
+</div>
+</div>
+  table{
+    width:100% !important;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  /* ocultar men√∫ lateral antiguo */
+  td[bgcolor="#669966"] a img{
+    display:none;
+  }
+
+  /* mostrar men√∫ hamburguesa */
+  .mobile-nav{
+    display:block;
+  }
+
+}
 <title>La historia de Ducati Mototrans, Ducati Cl&aacute;sica</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script language="JavaScript">
@@ -28,7 +114,76 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <style type="text/css">
-<!--
+
+  
+/* ===== FUENTE MODERNA Y LEGIBLE ===== */
+
+body{
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:#222;
+}
+
+/* t√≠tulos */
+h1,h2,h3,h4,h5{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:1.3;
+}
+
+/* p√°rrafos */
+p{
+  font-size:1rem;
+}
+
+/* enlaces */
+a{
+  color:#0066cc;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+/* ===== IM√ÅGENES RESPONSIVE ===== */
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ===== ADAPTACI√ìN PARA TABLETS ===== */
+
+@media screen and (max-width:1024px){
+
+  body{
+    font-size:15px;
+  }
+
+  h1{font-size:1.8rem;}
+  h2{font-size:1.6rem;}
+  h3{font-size:1.4rem;}
+
+}
+
+/* ===== ADAPTACI√ìN PARA M√ìVILES ===== */
+
+@media screen and (max-width:768px){
+
+  body{
+    font-size:14px;
+    padding:10px;
+  }
+
+  h1{font-size:1.6rem;}
+  h2{font-size:1.4rem;}
+  h3{font-size:1.2rem;}
+
+  p{
+    text-align:left;
+  }
+
+}<!--
 .historia {  background-attachment: fixed; background-image: url(dibujitos/folletodesmo.jpg); background-repeat: no-repeat}
 -->
 </style>
@@ -102,17 +257,17 @@ function MM_swapImage() { //v3.0
 <h2 align="center"><font face="Arial, Helvetica, sans-serif" size="5" color="#0033CC"><u>&Iacute;ndice:</u></font></h2>
       <blockquote> 
         <p><font face="Arial, Helvetica, sans-serif" size="4" color="#669966">1. 
-          IntroducciÛn:</font></p>
+          Introducci√≥n:</font></p>
         <p><font face="Arial, Helvetica, sans-serif"> <b>1.1<a href="#italia"> 
           Ducati Italia</a>.-</b></font><b><font face="Arial, Helvetica, sans-serif">1.2 
           <a href="#trans">Mototrans</a>.-</font></b></p>
         <p><font face="Arial, Helvetica, sans-serif"> <font size="4" color="#669966">2. 
           La historia de Mototrans a trav&eacute;s de los modelos:</font></font></p>
         <p><font face="Arial, Helvetica, sans-serif"> <b>2.1<a href="#sport"> 
-          La 125 sport.-</a> 2.2 <a href="#catalogo">Se amplÌa el cat·logo.</a>- 
+          La 125 sport.-</a> 2.2 <a href="#catalogo">Se ampl√≠a el cat√°logo.</a>- 
           2.3<a href="#lujo"> La deluxe y los ciclomotores.-</a> 2.4 <a href="#inde">La 
           independencia de Mototrans: la 24 Horas.-</a> 2.5 <a href="#Scrambler">El 
-          modelo Scrambler y la Road 250.-</a> 2.6 <a href="#vento">La nueva lÌnea: 
+          modelo Scrambler y la Road 250.-</a> 2.6 <a href="#vento">La nueva l√≠nea: 
           Vento, Forza, Twin, Strada, Desmo.-</a> 2.7<a href="#end"> El final 
           de la historia.</a>- 2.8 <a href="#bibliografia">Bibliograf&iacute;a.-</a></b></font></p>
         <p><font face="Arial, Helvetica, sans-serif" size="4" color="#669966"> 
@@ -129,24 +284,24 @@ function MM_swapImage() { //v3.0
   <tr>
     <td width="531" height="798" colspan="8" valign="top"><!-- #BeginEditable "teximg" --> 
   <p>&nbsp;</p>
-      <h3 align="center"><font size="5" face="Arial, Helvetica, sans-serif" color="#669966">1.IntroducciÛn.-</font></h3>
+      <h3 align="center"><font size="5" face="Arial, Helvetica, sans-serif" color="#669966">1.Introducci√≥n.-</font></h3>
   <h2><font size="4" face="Arial, Helvetica, sans-serif">1.1 Ducati Italia.-<a name="italia"></a></font></h2>
       
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ducati Meccanica SpA 
-        es una de las empresas fabricantes de motocicletas que todavÌa sigue produciendo 
+        es una de las empresas fabricantes de motocicletas que todav√≠a sigue produciendo 
         a pesar del poder de la industria japonesa. Fue fundada por el ingeniero 
         Antonio Cavalieri Ducati, el Sr. Carlos Crespi y tres de los hijos del 
         Sr. Cavalieri en Bolonia (Italia) en 1925, como una sociedad fabricante 
         de aparatos de radio y radiot&eacute;cnica en general. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1935 se traslada 
-        la producci&oacute;n a Borgo Panigale (cerca de la anterior f·brica de 
+        la producci&oacute;n a Borgo Panigale (cerca de la anterior f√°brica de 
         Bolonia) donde se construye una nueva factor&iacute;a. Durante la Segunda 
         Guerra Mundial, unos tanques alemanes en retirada entraron en la planta 
         de Borgo Panigale; se pudo salvar la maquinaria y se reconstruy&oacute; 
         la f&aacute;brica. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1945, aprovechando 
         que Siata (Societ&agrave; Italiana Applicazione Tecniche Auto-Aviatorie) 
-        habÌa desarrollado un pequeÒo motor auxiliar de cuatro tiempos, perfecto 
+        hab√≠a desarrollado un peque√±o motor auxiliar de cuatro tiempos, perfecto 
         para acoplar a las bicicletas, conocido como "Cucciolo" (cachorro de perro) 
         de 48 cc (39 x 40 mm) que rend&iacute;a 1 CV a 4500 rpm y ten&iacute;a 
         un bajo consumo, Ducati llega a un acuerdo con Siata para compartir la 
@@ -154,7 +309,7 @@ function MM_swapImage() { //v3.0
         cantidad. Posteriores evoluciones de este ciclomotor afianzaron a Ducati 
         en el mercado.</font></p>
       
-      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1952 Ducati diseÒa 
+      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1952 Ducati dise√±a 
         una motocicleta "de verdad", el modelo 98, que se presenta en el Sal&oacute;n 
         de Mil&aacute;n en una versi&oacute;n todav&iacute;a poco desarrollada 
         denominada &quot;Cavallino&quot;. </font></p>
@@ -163,15 +318,15 @@ function MM_swapImage() { //v3.0
         pas&oacute; a ser Giusepppe Montano. Este mismo a&ntilde;o aparecen las 
         dos versiones definitivas del modelo 98, una sport y otra turismo, ambas 
         con el motor de 98 cc, cuatro tiempos refrigerado por aire (y radiador 
-        refrigerador de aceite el modelo sport) y distribuciÛn por varillas. </font></p>
+        refrigerador de aceite el modelo sport) y distribuci√≥n por varillas. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Posteriormente, Ducati 
-        fichÛ al ingeniero que diseÒÛ su revolucionario motor monocilÌndrico mono·rbol 
+        fich√≥ al ingeniero que dise√±√≥ su revolucionario motor monocil√≠ndrico mono√°rbol 
         4 tiempos, el doctor<b> <a href="Imagenes/taglioni.jpg" target="_blank">Fablio 
-        Taglioni</a></b>, que provenÌa de F.B. Mondial. TambiÈn diseÒÛ el bicil&iacute;ndrico 
-        en V que llevaban la 750 SS y la Pantah, en el que est· basado el motor 
-        actual de las Ducati, e introdujo la distribuciÛn desmodrÛmica, adem·s 
-        de otros proyectos para la competiciÛn, que dieron a Ducati un palmarÈs 
-        muy importante y una reputaciÛn de motocicleta bella, de calidad, fiable, 
+        Taglioni</a></b>, que proven√≠a de F.B. Mondial. Tambi√©n dise√±√≥ el bicil&iacute;ndrico 
+        en V que llevaban la 750 SS y la Pantah, en el que est√° basado el motor 
+        actual de las Ducati, e introdujo la distribuci√≥n desmodr√≥mica, adem√°s 
+        de otros proyectos para la competici√≥n, que dieron a Ducati un palmar√©s 
+        muy importante y una reputaci√≥n de motocicleta bella, de calidad, fiable, 
         robusta y sin problemas. </font></p>
   <h6 align="center"><font face="Arial, Helvetica, sans-serif" size="3"><a href="#indice"><font color="#669966">VOLVER 
     AL &Iacute;NDICE</font></a></font></h6>
@@ -193,55 +348,55 @@ function MM_swapImage() { //v3.0
       <h2><font face="Arial, Helvetica, sans-serif" size="4">Fabio Taglioni (Dr. 
         T).-</font></h2>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Nacido el 10 de septiembre 
-        de 1920 en Lugo di Romagna, Fabio Taglioni se graduÛ en ingenierÌa en 
-        1943 y comenzÛ su carrera como diseÒador en Mondial, el fabricante de 
+        de 1920 en Lugo di Romagna, Fabio Taglioni se gradu√≥ en ingenier√≠a en 
+        1943 y comenz√≥ su carrera como dise√±ador en Mondial, el fabricante de 
         Motos italianas. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Hizo su debut con 
-        Ducati el 1 de mayo de 1954 como Director TÈcnico y en un tiempo rÈcord 
-        diseÒ&oacute; un motor de 100cc la &quot;Gran Sport&quot; Ducati - la 
-        conocida cariÒosamente como Marianna - para ganar varias ediciones del 
-        Motogiro Mil·n-Taranto del 1955 a 1957. </font></p>
+        Ducati el 1 de mayo de 1954 como Director T√©cnico y en un tiempo r√©cord 
+        dise√±&oacute; un motor de 100cc la &quot;Gran Sport&quot; Ducati - la 
+        conocida cari√±osamente como Marianna - para ganar varias ediciones del 
+        Motogiro Mil√°n-Taranto del 1955 a 1957. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">En 1956, Taglioni 
-        dise&ntilde;&oacute; la Ducati Desmo 125 Trialbero: aplicaciÛn a &quot;Marianna&quot; 
-        de un Sistema de distribuciÛn desmodrÛmica. </font></p>
+        dise&ntilde;&oacute; la Ducati Desmo 125 Trialbero: aplicaci√≥n a &quot;Marianna&quot; 
+        de un Sistema de distribuci√≥n desmodr√≥mica. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Su motor monocil&iacute;ndrico 
         (el mismo que montaron todas las Ducati-Mototrans monocil&iacute;ndricas, 
         se sigui&oacute; usando hasta mitad de los a&ntilde;os 80 con variaciones 
         de todo tipo (Vento, Forza, Strada)</font></p>
-      <p><font face="Arial, Helvetica, sans-serif" size="3">El Desmo - ˙nico sistema 
-        de v·lvulas de control - es una verdadera revoluciÛn para la empresa Ducati 
-        y para el mundo de la moto entera. Durante los aÒos 50 y 60, los inventos 
-        de Taglioni se aplican en la producciÛn de varias motocicletas. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="3">El Desmo - √∫nico sistema 
+        de v√°lvulas de control - es una verdadera revoluci√≥n para la empresa Ducati 
+        y para el mundo de la moto entera. Durante los a√±os 50 y 60, los inventos 
+        de Taglioni se aplican en la producci√≥n de varias motocicletas. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">En el 70, produce 
-        una "L" de 90 ∫, omnipresente en los modelos actuales de Ducati. </font></p>
+        una "L" de 90 ¬∫, omnipresente en los modelos actuales de Ducati. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Entre las muchas victorias 
-        de la versiÛn de carreras de la doble primera cilindros Ducati, los m·s 
+        de la versi√≥n de carreras de la doble primera cilindros Ducati, los m√°s 
         memorables son de las 200 millas de Imola en 1972 con Paul Smart y la 
         Isla de Man TT en 1978 con Mike Hailwood. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">La carrera de Fabio 
-        Taglioni, motivada por la pasiÛn desenfrenada de los motores competititivos, 
-        ha sido fundamental para el Èxito internacional de Ducati como un productor 
-        de motocicletas de competiciÛn de alto rendimiento. </font></p>
+        Taglioni, motivada por la pasi√≥n desenfrenada de los motores competititivos, 
+        ha sido fundamental para el √©xito internacional de Ducati como un productor 
+        de motocicletas de competici√≥n de alto rendimiento. </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Tenaz y decidido, 
-        el ingeniero colabor&oacute; con Ducati hasta 89 con incansable dedicaciÛn. 
+        el ingeniero colabor&oacute; con Ducati hasta 89 con incansable dedicaci√≥n. 
         ", </font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Conocido por nosotros 
         los Ducatistas Dr. T, con su genio le ha dado a las &quot;bicicletas&quot; 
-        Ducati la mec·nica de exclusividad y sofisticaciÛn tÈcnica que las distingue 
+        Ducati la mec√°nica de exclusividad y sofisticaci√≥n t√©cnica que las distingue 
         en el mundo.</font></p>
       <p><font face="Arial, Helvetica, sans-serif" size="3">Fallecio en Bolonia 
         el 18 julio de 2001.</font></p>
       <h2><font size="4" face="Arial, Helvetica, sans-serif">1.2 Mototrans.-<a name="trans"></a></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> De forma paralela, se funda en Barcelona la firma Maquinaria y Elementos 
-        de Transporte (Maquitrans), que se dedica a la reparaciÛn de trolebuses 
-        y tranvÌas. Esta compaÒÌa decide crear una secciÛn para la construcciÛn 
-        de triciclos motorizados de reparto. TambiÈn se atrevieron con un scooter 
-        bicilÌndrico de dos tiempos y 188,5 cc, que nunca llegÛ a fabricarse en 
+        de Transporte (Maquitrans), que se dedica a la reparaci√≥n de trolebuses 
+        y tranv√≠as. Esta compa√±√≠a decide crear una secci√≥n para la construcci√≥n 
+        de triciclos motorizados de reparto. Tambi√©n se atrevieron con un scooter 
+        bicil√≠ndrico de dos tiempos y 188,5 cc, que nunca lleg√≥ a fabricarse en 
         serie. </font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif">En EspaÒa, las Ducati 
+      <p><font size="3" face="Arial, Helvetica, sans-serif">En Espa√±a, las Ducati 
         italianas llegaban a Madrid por medio de Alejandro Maifava, que importaba 
         los Cucciolo. Posteriormente, en 1955, la casa Cliper, de Barcelona, importa 
-        los Cucciolo y triciclos de reparto, y en 1956 comienza la importaciÛn 
+        los Cucciolo y triciclos de reparto, y en 1956 comienza la importaci√≥n 
         del modelo 98 en las dos versiones. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1957, Maquitrans 
         y Cliper contactan para empezar a construir conjuntamente motocicletas. 
@@ -253,7 +408,7 @@ function MM_swapImage() { //v3.0
         la sociedad conjunta que se denomina<b> MOTOTRANS</b>. Equipan unas instalaciones 
         en la calle Almog&aacute;vares de Barcelona con toda la maquinaria necesaria 
         para montar las motocicletas, y consiguen una calidad superior (aunque 
-        algunas piezas todavÌa las traen de Italia). A partir de ese momento se 
+        algunas piezas todav√≠a las traen de Italia). A partir de ese momento se 
         dejan de importar los cucciolo y el modelo 98. <a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE</font></a>.</font></p>
       <p align="center"><img src="Imagenes/ducati65.jpg" width="303" height="182" border="1" name="feriamuestras"></p>
@@ -264,46 +419,46 @@ function MM_swapImage() { //v3.0
       <p><font size="3" face="Arial, Helvetica, sans-serif"> El dos de diciembre 
         de 1959 se presenta la Ducati 125 Sport en el hotel Avenida Palace, el 
         modelo de "10 CV y 110 km/h" que se puso a la venta a partir de 1960. 
-        La situaciÛn motociclista en EspaÒa por aquella Època se dividÌa entre 
-        Bultaquistas y Montesistas, adem·s de los propietarios de otras marcas 
+        La situaci√≥n motociclista en Espa√±a por aquella √©poca se divid√≠a entre 
+        Bultaquistas y Montesistas, adem√°s de los propietarios de otras marcas 
         como Lube Renn, Isso, Derbi, Narcla, Mv, Ossa, Peugeot, Guzzi, etc. que 
         no ten&iacute;an un car&aacute;cter tan deportivo, sino un concepto m&aacute;s 
         utilitario. </font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif">No habÌa motocicletas 
-        que tuvieran la calidad y los detalles que se consiguieron con la producciÛn 
-        de esta Ducati Mototrans, empezando por su distribuciÛn por eje rey, ·rbol 
-        de levas en cabeza y la utilizaciÛn de componentes como: carburadores 
-        Dell¥Orto, horquillas Llobe basadas en el diseÒo Marzocchi italiano, frenos 
-        Grimeca y embragues Drim, equipo Motoplat, pistones Borgo Tarabusi, bujÌas 
-        Bosch, baterÌas Tudor, llantas Akront de aluminio, adem·s del innovador 
+      <p><font size="3" face="Arial, Helvetica, sans-serif">No hab√≠a motocicletas 
+        que tuvieran la calidad y los detalles que se consiguieron con la producci√≥n 
+        de esta Ducati Mototrans, empezando por su distribuci√≥n por eje rey, √°rbol 
+        de levas en cabeza y la utilizaci√≥n de componentes como: carburadores 
+        Dell¬¥Orto, horquillas Llobe basadas en el dise√±o Marzocchi italiano, frenos 
+        Grimeca y embragues Drim, equipo Motoplat, pistones Borgo Tarabusi, buj√≠as 
+        Bosch, bater√≠as Tudor, llantas Akront de aluminio, adem√°s del innovador 
         sistema de alternador-regulador con platinos y condensador externos al 
-        volante magnÈtico y la baterÌa, que tanta sofisticaciÛn presentaba en 
-        este principio de los aÒos 60: el resultado final era deslumbrante. La 
-        moto era m·s cara que sus directas competidoras de dos tiempos: Bultaco 
-        Tralla 101 y Montesa BrÌo 110, pero el producto final hacÌa entender (que 
-        quiz·s no aceptar) la diferencia de precio. <a href="#indice"><font color="#990099">VOLVER 
+        volante magn√©tico y la bater√≠a, que tanta sofisticaci√≥n presentaba en 
+        este principio de los a√±os 60: el resultado final era deslumbrante. La 
+        moto era m√°s cara que sus directas competidoras de dos tiempos: Bultaco 
+        Tralla 101 y Montesa Br√≠o 110, pero el producto final hac√≠a entender (que 
+        quiz√°s no aceptar) la diferencia de precio. <a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE.</font></a></font></p>
       <p align="center"><img src="Imagenes/folletodeanuncio.jpg" width="234" height="171" border="1"><img src="Imagenes/fabricamotot.jpg" width="304" height="171" border="1" name="fabricamoto"></p>
   <h2><font size="3" face="Arial, Helvetica, sans-serif"> <font size="4">2.2. 
-    Se amplÌa el cat·logo.-<a name="catalogo"></a></font></font></h2>
-      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1961 se amplÌa 
-        la lÌnea de producciÛn y se fabrica la versiÛn tranquila de la 125 sport, 
+    Se ampl√≠a el cat√°logo.-<a name="catalogo"></a></font></font></h2>
+      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1961 se ampl√≠a 
+        la l√≠nea de producci√≥n y se fabrica la versi√≥n tranquila de la 125 sport, 
         la 125 TS, con menores prestaciones (al estar menos "tocada") y manillar 
-        de paseo, como diferencias m·s notables. Su ·rbol de levas era menos &quot;racing&quot;, 
-        haciendo a la moto funcionar a un rÈgimen de vueltas menor, las v&aacute;lvulas 
-        tambi&eacute;n variaban y tenÌa una relaciÛn de compresiÛn menor. TambiÈn 
+        de paseo, como diferencias m√°s notables. Su √°rbol de levas era menos &quot;racing&quot;, 
+        haciendo a la moto funcionar a un r√©gimen de vueltas menor, las v&aacute;lvulas 
+        tambi&eacute;n variaban y ten√≠a una relaci√≥n de compresi√≥n menor. Tambi√©n 
         aparece el modelo 175 TS "la Ducati perfecta", conocida por su gran fiabilidad 
         y sus buenas prestaciones, modelo con el que se dio la vuelta al mundo 
-        y con el que Ricardo Fargas y JosÈ M™ Arenas participaron en el Rallye 
-        de los 1000 km: fue el modelo m·s vendido de EspaÒa. </font></p>
+        y con el que Ricardo Fargas y Jos√© M¬™ Arenas participaron en el Rallye 
+        de los 1000 km: fue el modelo m√°s vendido de Espa√±a. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Se presenta tambi&eacute;n 
-        su versiÛn sport, una belleza denominada 200 &Eacute;lite. Todas ellas 
+        su versi√≥n sport, una belleza denominada 200 &Eacute;lite. Todas ellas 
         se presentan en la Feria de Barcelona de 1960 y todas estas apuestas de 
-        fabricaciÛn se ven respaldadas por el excelente papel que Ducati hace 
-        en las competiciones en nuestro paÌs con los pilotos Ricardo Fargas, Bruno 
+        fabricaci√≥n se ven respaldadas por el excelente papel que Ducati hace 
+        en las competiciones en nuestro pa√≠s con los pilotos Ricardo Fargas, Bruno 
         Spaggiari y Mandolini, que obtienen la victoria en pruebas de velocidad 
-        y subida en cuesta, adem·s de los triunfos en las 24 horas de Montjuic, 
-        prueba de resistencia muy reconocida en EspaÒa. Otros pilotos de la marca 
+        y subida en cuesta, adem√°s de los triunfos en las 24 horas de Montjuic, 
+        prueba de resistencia muy reconocida en Espa√±a. Otros pilotos de la marca 
         fueron &Aacute;ngel Nieto y Mauricio Aschl. </font> <font face="Arial, Helvetica, sans-serif" size="3"><a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE.</font></a></font> </p>
       <p align="center"><img src="Imagenes/bruno2.jpg" width="452" height="339" border="1"> 
@@ -312,47 +467,47 @@ function MM_swapImage() { //v3.0
         La 250 Deluxe y los ciclomotores.-<a name="lujo"></a></font></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1963 Mototrans 
         fabrica la 250 Deluxe, una moto desarrollada a partir de la italiana Diana 
-        250, pero que cambiaba las medidas del di·metro del pistÛn 74 mm y su 
-        carrera de 57,8 mm (preferida de Taglioni) por unas m·s cuadradas de 66 
+        250, pero que cambiaba las medidas del di√°metro del pist√≥n 74 mm y su 
+        carrera de 57,8 mm (preferida de Taglioni) por unas m√°s cuadradas de 66 
         mm por 69 mm. Es la primera muestra de independencia de Mototrans respecto 
-        a los diseÒos italianos; se exportan s&oacute;lo 5 unidades al mercado 
+        a los dise√±os italianos; se exportan s&oacute;lo 5 unidades al mercado 
         ingl&eacute;s de color negro y acabados en plata. Mototrans empieza en 
-        ese mismo aÒo, 1963, a fabricar los ciclomotores de Ducati Italia en EspaÒa, 
+        ese mismo a√±o, 1963, a fabricar los ciclomotores de Ducati Italia en Espa√±a, 
         debido a la importancia de este sector, y presenta en la Feria de Muestras 
-        un modelo de chasis abierto, el Piuma, y otro m·s deportivo, el 48 sport, 
-        ambos con cambios de 3 marchas al puÒo y 48 cc.</font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1965 se amplÌan 
-        las instalaciones de Mototrans, puesto que tiene un objetivo de fabricaciÛn 
+        un modelo de chasis abierto, el Piuma, y otro m√°s deportivo, el 48 sport, 
+        ambos con cambios de 3 marchas al pu√±o y 48 cc.</font></p>
+      <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1965 se ampl√≠an 
+        las instalaciones de Mototrans, puesto que tiene un objetivo de fabricaci√≥n 
         de 19000 m&aacute;quinas fabricadas anuales (la mayor&iacute;a de ellas 
-        eran ciclomotores). En la primavera de este aÒo las nuevas instalaciones 
-        est·n listas y Ducati pierde a uno de sus valedores m&aacute;s importantes: 
+        eran ciclomotores). En la primavera de este a√±o las nuevas instalaciones 
+        est√°n listas y Ducati pierde a uno de sus valedores m&aacute;s importantes: 
         Virgili se marcha de la empresa por diferencias con la junta directiva. 
         En 1966 se presentan los dos modelos que sustituyeron a las 125 Sport 
-        y la TS: los modelos 160 cc en sus versiones TS y Sport, que son b·sicamente 
+        y la TS: los modelos 160 cc en sus versiones TS y Sport, que son b√°sicamente 
         iguales, pero con el aumento de cilindrada en 40 cc y otros colores. <a href="#indice"><font color="#990099"> 
         VOLVER AL &Iacute;NDICE.</font></a></font></p>
   <h2><font size="4" face="Arial, Helvetica, sans-serif">2.4 La independencia 
     de Mototrans: la 24 Horas.-<a name="inde"></a></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> En la feria de Barcelona 
         de diciembre de 1965 y en la de Madrid de enero de 1966, se presenta el 
-        modelo m·s personal de Mototrans: la 24 horas. La moto, basada en las 
+        modelo m√°s personal de Mototrans: la 24 horas. La moto, basada en las 
         victorias de Ducati en las 24 horas de Montjuic, era impresionante, tanto 
-        por sus prestaciones como por su aspecto desde el punto de vista estÈtico, 
+        por sus prestaciones como por su aspecto desde el punto de vista est√©tico, 
         con el dep&oacute;sito de fibra, estriberas retrasadas, asiento con forma 
-        de col&iacute;n, etc. Los italianos tenÌan una moto deportiva parecida, 
-        el modelo Mach 1, y otro modelo, el Mark 3, en Estados Unidos, pero estÈticamente 
-        &eacute;stas se parecÌan m·s a una 250 Deluxe que a la 24 horas. Esta 
-        24 horas tenÌa cinco marchas a diferencia de todos los anteriores modelos 
-        de Mototrans, y una velocidad m·xima de 160 km/h. </font></p>
+        de col&iacute;n, etc. Los italianos ten√≠an una moto deportiva parecida, 
+        el modelo Mach 1, y otro modelo, el Mark 3, en Estados Unidos, pero est√©ticamente 
+        &eacute;stas se parec√≠an m√°s a una 250 Deluxe que a la 24 horas. Esta 
+        24 horas ten√≠a cinco marchas a diferencia de todos los anteriores modelos 
+        de Mototrans, y una velocidad m√°xima de 160 km/h. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">La 24 horas, considerada 
-        una de las motocicletas m·s bellas de su Època, es hoy en dÌa una valiosa 
-        pieza de colecciÛn para cualquier aficionado a la moto antigua. </font></p>
+        una de las motocicletas m√°s bellas de su √©poca, es hoy en d√≠a una valiosa 
+        pieza de colecci√≥n para cualquier aficionado a la moto antigua. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Se fabricaron 500 
         unidades de la primera serie y en dos series posteriores se fabric&oacute; 
-        hasta 1974, export&aacute;ndose 150 unidades al mercado inglÈs en agosto 
+        hasta 1974, export&aacute;ndose 150 unidades al mercado ingl√©s en agosto 
         de 1971, donde fue conocida como &quot;24 horrors" (24 horrores) sin duda 
-        por la falta de adaptaciÛn de la m·quina a circuitos cortos y complicados, 
-        donde era lenta y pesada y se rompÌa con facilidad, y no porque la motocicleta 
+        por la falta de adaptaci√≥n de la m√°quina a circuitos cortos y complicados, 
+        donde era lenta y pesada y se romp√≠a con facilidad, y no porque la motocicleta 
         fuera de <i>mala calidad</i>, sino porque no estaba destinada a llevar 
         la velocidad requerida en ese tipo de carreras</font></p>
       <p align="center"><font size="3" face="Arial, Helvetica, sans-serif">.<img src="Imagenes/Ducati-24H_AN.jpg" width="283" height="259" border="1"> 
@@ -374,47 +529,47 @@ function MM_swapImage() { //v3.0
         En este y otros dise&ntilde;os particip&oacute; de manera activa F&eacute;lix 
         Ferrer, que fue probador de la marca y trabaj&oacute; en todas las secciones 
         t&eacute;cnicas.</font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif"> TambiÈn se presentÛ 
-        en 1966 el modelo 200 TS, que venÌa a sustituir al exitoso modelo 175 
-        TS. La 200 TS era igual estÈticamente a la 175 TS pero con otros colores 
-        y los centÌmetros c˙bicos de aumento del di·metro del pistÛn. Estos ˙ltimos 
-        aÒos de la dÈcada de los 60 suponen para Mototrans una paralizaciÛn de 
-        la producciÛn de motocicletas siendo su mercado principal los ciclomotores, 
-        puesto que las motos est·n en crisis. Ricardo Fargas dise&ntilde;a el 
+      <p><font size="3" face="Arial, Helvetica, sans-serif"> Tambi√©n se present√≥ 
+        en 1966 el modelo 200 TS, que ven√≠a a sustituir al exitoso modelo 175 
+        TS. La 200 TS era igual est√©ticamente a la 175 TS pero con otros colores 
+        y los cent√≠metros c√∫bicos de aumento del di√°metro del pist√≥n. Estos √∫ltimos 
+        a√±os de la d√©cada de los 60 suponen para Mototrans una paralizaci√≥n de 
+        la producci√≥n de motocicletas siendo su mercado principal los ciclomotores, 
+        puesto que las motos est√°n en crisis. Ricardo Fargas dise&ntilde;a el 
         velomotor 50 TT a partir de restos de otras motos de la f&aacute;brica. 
         Se fabrica tambi&eacute;n la 200 V5 que sustituye a la &Eacute;lite 200 
         con un lavado de cara que inclu&iacute;a un cambio de colores sin muchas 
-        m·s novedades. Se intenta fabricar una moto de cross, la RTS 250, que 
-        se presenta en el SalÛn de Barcelona de 1970, pero es un fracaso y no 
-        tuvo aceptaciÛn. TambiÈn se presenta el ciclomotor Mini 2 y la gran sensaciÛn 
-        de este salÛn, el modelo Scrambler.</font> <font face="Arial, Helvetica, sans-serif" size="3"><a href="#indice"><font color="#990099">VOLVER 
+        m√°s novedades. Se intenta fabricar una moto de cross, la RTS 250, que 
+        se presenta en el Sal√≥n de Barcelona de 1970, pero es un fracaso y no 
+        tuvo aceptaci√≥n. Tambi√©n se presenta el ciclomotor Mini 2 y la gran sensaci√≥n 
+        de este sal√≥n, el modelo Scrambler.</font> <font face="Arial, Helvetica, sans-serif" size="3"><a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE</font></a>.</font></p>
       <p align="center"><img src="Folletos/Anuncio%20Ducati%2024H.jpg" width="576" height="605" name="anuncio24h" border="1"></p>
       <h2><font size="3" face="Arial, Helvetica, sans-serif"> <font size="4">2.5. 
     El Modelo Scrambler y la Road 250.-<a name="scrambler"></a></font></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> La Scrambler fue 
-        un encargo de Berliner Motor Company, compaÒÌa americana de distribuciÛn 
+        un encargo de Berliner Motor Company, compa√±√≠a americana de distribuci√≥n 
         de motos europeas y, por tanto, estaba pensada para el mercado americano; 
-        era un modelo campo-ciudad de 250 cc con una estÈtica sin duda adelantada 
-        a su tiempo: motor de cinco velocidades de c·rter ancho (c·rter que permite 
-        introducir una quinta velocidad y m·s cantidad de aceite) y que proporciona 
-        a Mototrans la inspiraciÛn para fabricar, con cuatro retoques, un modelo 
-        de producciÛn nacional: la 250 ROAD. Se fabricaron en cilindradas de 250 
-        y 350 cc, y la Scrambler tambiÈn en 450 cc, modelo que no se vendiÛ en 
-        EspaÒa. </font></p>
+        era un modelo campo-ciudad de 250 cc con una est√©tica sin duda adelantada 
+        a su tiempo: motor de cinco velocidades de c√°rter ancho (c√°rter que permite 
+        introducir una quinta velocidad y m√°s cantidad de aceite) y que proporciona 
+        a Mototrans la inspiraci√≥n para fabricar, con cuatro retoques, un modelo 
+        de producci√≥n nacional: la 250 ROAD. Se fabricaron en cilindradas de 250 
+        y 350 cc, y la Scrambler tambi√©n en 450 cc, modelo que no se vendi√≥ en 
+        Espa√±a. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">La Scrambler 250 se 
-        llegÛ a fabricar Ìntegramente en EspaÒa y era ensamblada en Italia. </font></p>
+        lleg√≥ a fabricar √≠ntegramente en Espa√±a y era ensamblada en Italia. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Entre 1972 y 1976 
-        se fabricaron en EspaÒa estos modelos, </font><font size="3" face="Arial, Helvetica, sans-serif">y 
+        se fabricaron en Espa√±a estos modelos, </font><font size="3" face="Arial, Helvetica, sans-serif">y 
         cambiaron el Scrambler 250 por el 350 en 1973. </font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif">En 1977 se presentÛ 
+      <p><font size="3" face="Arial, Helvetica, sans-serif">En 1977 se present√≥ 
         el modelo ROAD 250 77: una moto con parte ciclo de ROAD y el dep&oacute;sito 
         de los antiguos modelos de carretera en color rojo con algunas mejoras 
-        en el diseÒo del asiento, cuadro de mandos de la Forza, pilotos de intermitencias, 
+        en el dise√±o del asiento, cuadro de mandos de la Forza, pilotos de intermitencias, 
         etc, que la hac&iacute;an bastante bonita.</font> <font face="Arial, Helvetica, sans-serif" size="3"><a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE.</font></a></font> </p>
       <h2><font size="3" face="Arial, Helvetica, sans-serif"><font size="4">2.6. 
-        La nueva lÌnea <img src="Imagenes/ducati70.gif" width="119" height="25" name="ducati70" alt="Logo ducati en los 70" align="absmiddle">: 
+        La nueva l√≠nea <img src="Imagenes/ducati70.gif" width="119" height="25" name="ducati70" alt="Logo ducati en los 70" align="absmiddle">: 
         Vento, Forza, Twin, </font><font size="3" face="Arial, Helvetica, sans-serif"><font size="4">Strada</font></font>, 
         <font size="4">Desmo.- <a name="vento"></a></font></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1974 la situaci&oacute;n 
@@ -426,62 +581,62 @@ function MM_swapImage() { //v3.0
         nueva moto, la Vento 350, modelo deportivo que vino a cubrir el hueco 
         dejado por la 24 horas. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Tambi&eacute;n se 
-        presenta la Forza, un modelo de carretera m·s turismo. Respecto a otros 
+        presenta la Forza, un modelo de carretera m√°s turismo. Respecto a otros 
         modelos derivados de los ciclomotores se fabrica el modelo Senda 75 y 
         la Pronto 100. Los motores de los ciclomotores fueron empleados por marcas 
         ajenas a Mototrans, como Bultaco y Ossa, debido a su gran calidad. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Las versiones definitivas 
-        de la Vento y la Forza no salen al mercado hasta dos aÒos despuÈs, ligeramente 
+        de la Vento y la Forza no salen al mercado hasta dos a√±os despu√©s, ligeramente 
         mejoradas, y sin competidoras en el mercado de motocicletas de carretera, 
-        puesto que las otras marcas espaÒolas se dedicaban a las motos de campo 
+        puesto que las otras marcas espa√±olas se dedicaban a las motos de campo 
         principalmente. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">En 1976 Ducati Italia 
-        empezÛ a fabricar la 500 TWIN, modelo bicil&iacute;ndrico horizontal con 
-        distribuciÛn por cadena, y Mototrans vio su oportunidad de entrar en el 
+        empez√≥ a fabricar la 500 TWIN, modelo bicil&iacute;ndrico horizontal con 
+        distribuci√≥n por cadena, y Mototrans vio su oportunidad de entrar en el 
         sector de motos de gran cilindrada, pero la moto result&oacute; un fracaso 
-        absoluto, pues un fallo de diseÒo del sistema de engrase de aceite oblig&oacute; 
+        absoluto, pues un fallo de dise√±o del sistema de engrase de aceite oblig&oacute; 
         a montar un radiador en todas las unidades para enfriarlo. Adem&aacute;s 
         ten&iacute;a problemas de estabilidad, ruido de motor, etc. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Para terminar de rematar 
-        la mala suerte, este aÒo llegaron los fabricantes japoneses a Espa&ntilde;a 
+        la mala suerte, este a√±o llegaron los fabricantes japoneses a Espa&ntilde;a 
         y la competencia empez&oacute; a ser feroz. Se presenta la 250 STRADA, 
-        con el motor tradicional, chasis de la TWIN y la estÈtica de la FORZA, 
-        pero m·s barata que &eacute;sta, al no incorporar freno de disco y otros 
+        con el motor tradicional, chasis de la TWIN y la est√©tica de la FORZA, 
+        pero m√°s barata que &eacute;sta, al no incorporar freno de disco y otros 
         detalles. </font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif">Dos aÒos despuÈs de 
-        esta presentaciÛn y, despuÈs de las aut&eacute;nticas operaciones de cirug&iacute;a 
+      <p><font size="3" face="Arial, Helvetica, sans-serif">Dos a√±os despu√©s de 
+        esta presentaci√≥n y, despu√©s de las aut&eacute;nticas operaciones de cirug&iacute;a 
         que los talleres hac&iacute;an con las TWIN, Mototrans presenta un modelo 
-        evolucionado, la 500 DESMO, con distribuciÛn desmodrÛmica, que tuvo, debido 
+        evolucionado, la 500 DESMO, con distribuci√≥n desmodr√≥mica, que tuvo, debido 
         a la mala fama de la TWIN, un fracaso de ventas. <a href="#indice"><font color="#990099">VOLVER 
         AL &Iacute;NDICE.</font></a></font> </p>
       <h2><font size="4" face="Arial, Helvetica, sans-serif">2.7. El final de la historia.-<a name="end"></a></font></h2>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1978 empieza el 
-        calvario para Mototrans, a raÌz de un acuerdo con Sanglas y Yamaha para 
-        producir conjuntamente, que se convierte en un "engaÒo" de los japoneses 
-        para empezar a fabricar en la factorÌa de Sanglas. </font></p>
+        calvario para Mototrans, a ra√≠z de un acuerdo con Sanglas y Yamaha para 
+        producir conjuntamente, que se convierte en un "enga√±o" de los japoneses 
+        para empezar a fabricar en la factor√≠a de Sanglas. </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Cien obreros de Mototrans 
-        se van a la f·brica de Sanglas, y eso le viene bien a Mototrans, que tenÌa 
+        se van a la f√°brica de Sanglas, y eso le viene bien a Mototrans, que ten√≠a 
         una plantilla sobredimensionada y problemas con los sindicatos. Vuelve 
-        Virgili a Mototrans y la marca, que necesitaba modelos de fabricaciÛn 
+        Virgili a Mototrans y la marca, que necesitaba modelos de fabricaci√≥n 
         propia para salir adelante, sin depender de la marca italiana ni de su 
-        evoluciÛn, desarrolla la Yack 410, esta vez bajo las siglas MTV (Mototrans 
-        Virgili), un modelo de trail de 400 cc monocilÌndrico, distribuciÛn por 
-        correa dentada y desmodrÛmica, que finalmente no se llegÛ nunca a fabricar 
+        evoluci√≥n, desarrolla la Yack 410, esta vez bajo las siglas MTV (Mototrans 
+        Virgili), un modelo de trail de 400 cc monocil√≠ndrico, distribuci√≥n por 
+        correa dentada y desmodr√≥mica, que finalmente no se lleg√≥ nunca a fabricar 
         por lo caro del proyecto y la negativa de los bancos a apoyarlo econ&oacute;micamente. 
         </font></p>
-      <p><font size="3" face="Arial, Helvetica, sans-serif">En 1981 se intentÛ 
-        con los ciclomotores MTV con motor alem·n Z&uuml;ndapp, en versiÛn cross 
-        y carretera, con suspensiÛn cantilever, cuatro velocidades y una bonita 
-        lÌnea en ambas versiones.</font></p>
+      <p><font size="3" face="Arial, Helvetica, sans-serif">En 1981 se intent√≥ 
+        con los ciclomotores MTV con motor alem√°n Z&uuml;ndapp, en versi√≥n cross 
+        y carretera, con suspensi√≥n cantilever, cuatro velocidades y una bonita 
+        l√≠nea en ambas versiones.</font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif"> En 1982 se produce 
-        la intervenciÛn judicial de la f·brica, que nombra un administrador. Se 
-        le debe dinero a Banesto. La empresa anuncia la suspensiÛn de pagos. Los 
+        la intervenci√≥n judicial de la f√°brica, que nombra un administrador. Se 
+        le debe dinero a Banesto. La empresa anuncia la suspensi√≥n de pagos. Los 
         sindicatos no sirven de ninguna ayuda en esta situaci&oacute;n. Los ciclomotores 
-        siguen alg˙n tiempo m·s en el mercado, pero se decide cerrar la f·brica. 
+        siguen alg√∫n tiempo m√°s en el mercado, pero se decide cerrar la f√°brica. 
         </font></p>
       <p><font size="3" face="Arial, Helvetica, sans-serif">Ricardo Fargas y Felix 
-        Ferrer, a travÈs de Gamma Motors, se quedan con todo el recambio, el proyecto 
-        de competiciÛn Tecfar y las motos MTV. La crisis del sector est&aacute; 
+        Ferrer, a trav√©s de Gamma Motors, se quedan con todo el recambio, el proyecto 
+        de competici√≥n Tecfar y las motos MTV. La crisis del sector est&aacute; 
         en marcha, y el gobierno no presta ayuda a las f&aacute;bricas, terminando 
         muchas de ellas como termin&oacute; MOTOTRANS. F&aacute;bricas tan importantes 
         para la historia del motociclismo espa&ntilde;ol como Bultaco y Ossa, 
@@ -547,3 +702,4 @@ function MM_swapImage() { //v3.0
 </table>
 </body>
 </html>
+
