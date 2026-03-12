@@ -29,99 +29,12 @@ function MM_swapImage() { //v3.0
 //-->
 </script>
 <style type="text/css">
-  /* ===== MENU MODERNO ===== */
-
-.mobile-nav{
-  display:none;
-  background:#CC0000;
-  padding:10px;
-}
-
-.hamburger{
-  font-size:28px;
-  color:white;
-  cursor:pointer;
-}
-
-.mobile-menu{
-  display:none;
-  flex-direction:column;
-}
-
-.mobile-menu a{
-  color:white;
-  text-decoration:none;
-  padding:10px;
-  border-top:1px solid #ffffff44;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media screen and (max-width: 768px){
-
-  body{
-    background-size:cover;
-  }
-
-  table{
-    width:100% !important;
-  }
-
-  img{
-    max-width:100%;
-    height:auto;
-  }
-
-  /* ocultar menú viejo */
-  td[bgcolor="#CC0000"] p a img{
-    display:none;
-  }
-
-  /* mostrar menú móvil */
-  .mobile-nav{
-    display:block;
-  }
-
-}
 <!--
 .index {  background-attachment: fixed; background-image: url(Imagenes/FONDOdeluxecarenada.jpg); background-repeat: no-repeat}
 -->
 </style>
 </head>
-<script>
-
-function toggleMenu() {
-  var menu = document.getElementById("mobileMenu");
-
-  if(menu.style.display === "flex"){
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "flex";
-  }
-
-}
-
-</script>
-
-  <div class="mobile-nav">
-
-<div class="hamburger" onclick="toggleMenu()">
-☰ Menú
-</div>
-
-<div class="mobile-menu" id="mobileMenu">
-
-<a href="historia.htm">Historia</a>
-<a href="fotos.html">Fotos</a>
-<a href="modelos.htm">Modelos</a>
-<a href="tecnica.html">Técnica</a>
-<a href="links.html">Links</a>
-<a href="diagramas.htm">Diagramas</a>
-
-</div>
-</div>
-  <body bgcolor="#FFFFFF" onLoad="MM_preloadImages('Imagenes/historiaover.gif','Imagenes/culata2over.gif','Imagenes/botonover.gif','Imagenes/modelosover.gif','Imagenes/fabricaducati.jpg','dibujitos/portadamanual.jpg','Imagenes/corteenv.jpg','Imagenes/valvulas.gif','Imagenes/guggenheim175SS.jpg','Imagenes/desmoculata.jpg','Imagenes/enlacesover.gif')" link="#CC0000" class="index">
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('Imagenes/historiaover.gif','Imagenes/culata2over.gif','Imagenes/botonover.gif','Imagenes/modelosover.gif','Imagenes/fabricaducati.jpg','dibujitos/portadamanual.jpg','Imagenes/corteenv.jpg','Imagenes/valvulas.gif','Imagenes/guggenheim175SS.jpg','Imagenes/desmoculata.jpg','Imagenes/enlacesover.gif')" link="#CC0000" class="index">
 <div align="center">
   <table cellspacing="0" cellpadding="0" border="0" align="center">
     <tr> 
@@ -415,4 +328,3 @@ function toggleMenu() {
 <!-- Begin Motigo Webstats counter code --> 
 </body>
 </html>
-
